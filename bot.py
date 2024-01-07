@@ -9,11 +9,11 @@ import asyncio, datetime, time
 ACCEPTED_TEXT = "Hey {user}\n\nYour Request For {chat} Is Accepted ✅"
 START_TEXT = "Hai {}\n\nI am Auto Request Accept Bot With Working For All Channel. Add Me In Your Channel To Use"
 
-API_ID = int(env.get('API_ID'))
-API_HASH = env.get('API_HASH')
-BOT_TOKEN = env.get('BOT_TOKEN')
-DB_URL = env.get('DB_URL')
-ADMINS = int(env.get('ADMINS'))
+API_ID = int(env.get('API_ID', '14298205'))
+API_HASH = env.get('API_HASH', '28df6d84da76d8606bf5f0e71ecfb62c')
+BOT_TOKEN = env.get('BOT_TOKEN', '6406498841:AAHdtO1lCcgwKDlCHvNcdQodaImTnS9oiVk')
+DB_URL = env.get('DB_URL', 'mongodb+srv://nakflixbot:alpha3720@cluster0.qgybxbu.mongodb.net/?retryWrites=true&w=majority')
+ADMINS = int(env.get('ADMINS', '1458235021'))
 
 Dbclient = AsyncIOMotorClient(DB_URL)
 Cluster = Dbclient['Cluster0']
